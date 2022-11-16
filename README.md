@@ -29,7 +29,7 @@ ec\la_muerte_del_angel_power_noise.wav
 
 ![](figure1.png)
 
-3.	Identifique en el espectro las componentes de frecuencia causadas por la línea de poder de 60Hz, así como sus posibles armónicos. Para ello, realice una ampliación del espectro en la región de interés pero asegúrese que las unidades se mantengan correctas.
+**3.	Identifique en el espectro las componentes de frecuencia causadas por la línea de poder de 60Hz, así como sus posibles armónicos. Para ello, realice una ampliación del espectro en la región de interés pero asegúrese que las unidades se mantengan correctas.**
 
 ![](figure2.png)
 
@@ -65,12 +65,15 @@ La ecuación en diferencia es:
 ![](eq5.png)
 
 El número de decimales es importante, ya que la frecuencia de filtrado deseada es muy pequeña en comparación con la frecuencia de muestreo, por lo que es necesaria la precisión.
+
 Generalizando para los primeros N armónicos, la función de transferencia será:
 
 ![](eq6.png)
 
 En teoría, los 13 o más armónicos significativos se suprimirían calculando la función de transferencia anterior para N=13 y expandiendo los coeficientes. En la práctica, la estabilidad numérica es difícil de lograr en Octave con una cantidad tan grande de polos y ceros cerca del círculo unitario.
+
 Para mayor estabilidad, se utilizan dos pasos de filtro de 8 polos. En el direccionamiento de los armónicos impares del 1 al 7, y el otro para los armónicos pares del 2 al 8.
+
 Para el filtro impar:
 
 ![](eq7.png)
