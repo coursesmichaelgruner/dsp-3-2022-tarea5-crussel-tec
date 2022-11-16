@@ -1,7 +1,5 @@
 # Sistema de Supresión de Ruido de Red Eléctrica
 
-> Presente su reporte aquí
-
 **1.	¿Cuál es la frecuencia de muestreo con que fue tomada la señal?**
 
 48 kHz:
@@ -101,4 +99,5 @@ Para el filtro par:
 **8.	Presente conclusiones (cualitativas) sobre el resultado obtenido. Procure compararlo con la señal de referencia. Si el prototipo no fue satisfactorio, presente un análisis donde detalle las posibles causas.**
 
 El audio filtrado muestra una clara reducción en el nivel de ruido, con un ligero remanente audible. Esto está respaldado por los gráficos espectrales, en el gráfico semilogarítmico todavía se ven picos leves. Los ceros adicionales para ensanchar las muescas pueden reducir aún más este ruido.
+
 También hay una atenuación significativa en las regiones de frecuencia más baja adyacentes a las frecuencias de muesca. Esto podría compensarse con polos adicionales en estas áreas para mejorar la nitidez de las muescas, o aplicando un filtro de paso bajo para suprimir igualmente las frecuencias altas y luego amplificando todas las frecuencias para compensar.
